@@ -19,7 +19,7 @@ const NavBar = () => {
     marginRight: "5px", // Add spacing between the circle and text
   };
   return (
-    <nav  style={{ background: 'linear-gradient(to right, #121212 50%, #A5E9E1)'}}>
+    <nav  style={{ background: 'linear-gradient(to right, #041562 20%, #11468F)'}}>
       <div className="flex items-center justify-between ml-8 mr-8">
         <Navbar expand="lg">
           <Container>
@@ -27,7 +27,7 @@ const NavBar = () => {
               
             <div className="flex text-center">
             {/* <img src={logo} style={{ width: '100px' }} /> */}
-              <h1 className='text-4xl  ml-2' style={{fontFamily:'cursive',color:'white'}}>X-Mark</h1>
+              <h1 className='text-4xl  ml-2' style={{fontFamily:'cursive',color:'white'}}>Team X-Mark</h1>
             </div>
 
                 {/* <div className="mr-2 mb-2" style={circleStyle}></div>

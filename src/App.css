@@ -1,7 +1,7 @@
 
 .App {
   text-align: center;
-   background-color:#dbe2e9 ; /* #F4F6FF */
+   background-color:#F6F1F1 ; /* #F4F6FF */
 }
 
 .App-logo {
@@ -42,8 +42,8 @@ ul {
   list-style: none; /* Remove bullet points from ul */
 }
 .btn-outline-primary {
-  background-color: #388186 !important;
-  border-color: #388186 !important; /* Set the border color to your primary color */
+  background-color: #19A7CE !important;
+  border-color: #19A7CE !important; /* Set the border color to your primary color */
   color: #fff !important; /* Set the text color to your primary color */
   width: max-content!important;
 
@@ -52,7 +52,7 @@ ul {
 /* On hover, change the background color to your primary color */
 .btn-outline-primary:hover {
   background-color: transparent !important;
-  color: #388186 !important; /* Set the text color to white or another contrasting color */
+  color: #19A7CE !important; /* Set the text color to white or another contrasting color */
 }
 .carousel-item {
   height: 500px; /* Customize the height as per your needs */
@@ -81,7 +81,7 @@ margin-right: 0px !important;
     color: #ffff;
   }
   .text-custom-nav-color a:hover {
-    color: #388186;
+    color: #19A7CE;
   }
   
   
