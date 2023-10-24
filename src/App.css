@@ -1,0 +1,90 @@
+
+.App {
+  text-align: center;
+   background-color:#dbe2e9 ; /* #F4F6FF */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ul {
+  list-style: none; /* Remove bullet points from ul */
+}
+.btn-outline-primary {
+  background-color: #388186 !important;
+  border-color: #388186 !important; /* Set the border color to your primary color */
+  color: #fff !important; /* Set the text color to your primary color */
+  width: max-content!important;
+
+}
+
+/* On hover, change the background color to your primary color */
+.btn-outline-primary:hover {
+  background-color: transparent !important;
+  color: #388186 !important; /* Set the text color to white or another contrasting color */
+}
+.carousel-item {
+  height: 500px; /* Customize the height as per your needs */
+  overflow: hidden; /* Hide overflowing content if necessary */
+}
+.custom-button1{
+  background-color:#75757580!important;
+  border-color: #75757580 !important; /* Set the border color to your primary color */
+  color: #fff !important;
+  width: max-content!important;
+}
+.row{
+margin-right: 0px !important;
+}
+.custom-card-style {
+  border: none !important;
+  border-radius: 20px !important;
+  background-color: #1f2023 !important; /* Optional: Remove card border-radius if needed */
+}
+.custom-card-style1 {
+  border: none !important;
+  border-radius: 20px !important;
+ 
+  }
+  .text-custom-nav-color a {
+    color: #ffff;
+  }
+  .text-custom-nav-color a:hover {
+    color: #388186;
+  }
+  
+  
+  
+  
+  
