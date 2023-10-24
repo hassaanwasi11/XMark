@@ -26,7 +26,7 @@ const NavBar = () => {
             <Navbar.Brand href="/">
               
             <div className="flex text-center">
-            {/* <img src={logo} width={'10%'} /> */}
+            {/* <img src={logo} style={{ width: '100px' }} /> */}
               <h1 className='text-4xl  ml-2' style={{fontFamily:'cursive',color:'white'}}>X-Mark</h1>
             </div>
 
@@ -62,7 +62,7 @@ const NavBar = () => {
                 <Nav.Link href="/AboutUs" className="whitespace-nowrap">About Us</Nav.Link>
                 <Nav.Link href="/contactus"className="whitespace-nowrap">Contact Us</Nav.Link>
                 <Nav.Link href="/Blogs">Blogs</Nav.Link>
-                <Nav.Link href="#link">FAQs</Nav.Link>
+                {/* <Nav.Link href="#link">FAQs</Nav.Link> */}
               </Nav>
             </Navbar.Collapse>
           </Container>
