@@ -42,8 +42,8 @@ ul {
   list-style: none; /* Remove bullet points from ul */
 }
 .btn-outline-primary {
-  background-color: #19A7CE !important;
-  border-color: #19A7CE !important; /* Set the border color to your primary color */
+  background-color: #E57C23 !important;
+  border-color: #E57C23 !important; /* Set the border color to your primary color */
   color: #fff !important; /* Set the text color to your primary color */
   width: max-content!important;
 
@@ -70,7 +70,7 @@ margin-right: 0px !important;
 .custom-card-style {
   border: none !important;
   border-radius: 20px !important;
-  background-color: #1f2023 !important; /* Optional: Remove card border-radius if needed */
+  background-color: #11468F !important; /* Optional: Remove card border-radius if needed */
 }
 .custom-card-style1 {
   border: none !important;
@@ -81,7 +81,7 @@ margin-right: 0px !important;
     color: #ffff;
   }
   .text-custom-nav-color a:hover {
-    color: #19A7CE;
+    color: #E57C23;
   }
   
   

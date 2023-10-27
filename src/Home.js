@@ -83,10 +83,10 @@ const Home = () => {
        className="mr-4" />
            <animated.h2 style={headingAnimation} className="text-xl sm:text-3xl font-semibold font-sans">One-stop marketing agency dedicated to serving Amazon and e-commerce brands</animated.h2>
           </div>
-          <p className="text-2xl font-bold sm:text-6xl mb-4 text-start">
+          <p className="text-2xl font-bold sm:text-6xl mb-4 text-start text-[#E57C23]">
             <span>X-Mark: </span>{" "}
             <span className="text-[#041562]">Mark your </span>{" "}
-            <br />
+           
             <span>Success </span>
             <span className=" text-[#041562]">
             With us
@@ -126,7 +126,7 @@ const Home = () => {
       <div className="item-container p-2">
         <img src={home3} alt="Your Image" className="image" />
         <div className="number-container">
-        <h1 className="text-[#11468F] font-bold text-5xl mt-2"><AnimatedNumber finalNumber={100}/>+</h1>
+        <h1 className="text-[#E57C23] font-bold text-5xl mt-2"><AnimatedNumber finalNumber={100}/>+</h1>
                   <p>Team Members</p>
         </div>
       </div>
@@ -190,7 +190,7 @@ const Home = () => {
           <div className="col-lg-6 mt-2 sm:mt-5">
             <div className="px-4 mt-10">
               <p className="text-2xl sm:text-5xl mb-4">
-                <span className="font-semibold text-[#388186]">
+                <span className="font-semibold text-[#E57C23]">
                   Our Services,{" "}
                 </span>{" "}
                 <br />
@@ -198,7 +198,7 @@ const Home = () => {
                   Serving thousands of{" "}
                 </span>{" "}
                 <br />
-                <span className="font-semibold text-[#388186]">
+                <span className="font-semibold text-[#E57C23]">
                   Happy{" "}
                 </span>
                 <span className="font-semibold text-[#ffff]">
@@ -321,7 +321,7 @@ const Home = () => {
     >
           <div className="bg-[#11468F] rounded-2xl  h-[600px]">
         <div className="box p-4 d-flex flex-column align-items-start">
-            <h2 className="font-sans font-bold text-white"><span className="text-[#006261]">ROI</span> Calculator</h2>
+            <h2 className="font-sans font-bold text-white"><span className="text-[#E57C23]">ROI</span> Calculator</h2>
             <p className="text-[#979797] font-sans text-lg text-start">
               Return on investment (ROI) calculator that returns total ROI rate
               and annualized ROI using either actual dates of investment.
@@ -343,7 +343,7 @@ const Home = () => {
         onMouseLeave={() => setIsHovered2(false)}
         style={{ transition: 'transform 0.3s ease' }}
     >
-          <div className="bg-[#1f2023] rounded-2xl h-[600px]">
+          <div className="bg-[#11468F] rounded-2xl h-[600px]">
         <div className="box p-4 d-flex flex-column align-items-start">
             <h2 className="font-sans font-bold text-white"><span className="text-[#006261]">Dashboard </span> And Graphs</h2>
             <p className="text-[#979797] font-sans text-lg text-start">
@@ -368,7 +368,7 @@ const Home = () => {
         onMouseLeave={() => setIsHovered3(false)}
         style={{ transition: 'transform 0.3s ease' }}
     >
-          <div className="bg-[#1f2023] rounded-2xl h-[600px]">
+          <div className="bg-[#11468F] rounded-2xl h-[600px]">
         <div className="box p-4 d-flex flex-column align-items-start">
             <h2 className="font-sans font-bold text-white"><span className="text-[#006261]">Package</span>  Customization</h2>
             <p className="text-[#979797] font-sans text-lg text-start">
@@ -391,7 +391,7 @@ const Home = () => {
         onMouseLeave={() => setIsHovered4(false)}
         style={{ transition: 'transform 0.3s ease' }}
     >
-          <div className="bg-[#1f2023] rounded-2xl h-[600px]">
+          <div className="bg-[#11468F] rounded-2xl h-[600px]">
         <div className="box p-4 d-flex flex-column align-items-start">
             <h2 className="font-sans font-bold text-white"><span className="text-[#006261]">Case</span> Studies</h2>
             <p className="text-[#979797] font-sans text-lg text-start">
@@ -412,7 +412,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-    <div className=" mt-2 pb-2" style={{ background: 'linear-gradient(to right, #121212 20%, #393E46)'}}>
+    <div className=" mt-2 pb-2" style={{ background: 'linear-gradient(to right, #041562 20%, #11468F)'}}>
     <h1 className="text-center font-sans p-4 font-semibold text-white">
       <span>Latest From </span><span className="text-[#006261]">Our Blogs</span>
     </h1>

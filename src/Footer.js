@@ -35,7 +35,7 @@ function Footer() {
   };
 
   return (
-    <footer className=" text-white font-sans px-2 sm:px-0 py-3 mt-4" style={{ background: 'linear-gradient(to right, #121212 70%, #A5E9E1)'}}>
+    <footer className=" text-white font-sans px-2 sm:px-0 py-3 mt-4" style={{ background: 'linear-gradient(to right, #041562 70%, #11468F)'}}>
       <div className="container">
         <div className="row">
           <div className="col-md-3 col-sm-6">

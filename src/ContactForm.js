@@ -11,7 +11,7 @@ function ContactForm() {
         <div className="row">
           <div className="col-md-6 font-sans">
             {/* Content on the left */}
-            <h2 className='font-bold text-start'>Available <span className="text-[#006261]"> 24/7 </span> to Serve  <span className="text-[#006261]">YOU </span></h2>
+            <h2 className='font-bold text-start'>Available <span className="text-[#E57C23]"> 24/7 </span> to Serve  <span className="text-[#E57C23]">YOU </span></h2>
             <p className="text-[#979797]">
             We are available always to help our precious clients to contact us just fill the form.
             </p>
@@ -19,7 +19,7 @@ function ContactForm() {
           </div>
           <div className="col-md-6 text-white font-sans">
             {/* Contact form on the right */}
-            <div className="box  rounded p-4" style={{ background: 'linear-gradient(to right, #121212 10%, #393E46)'}}>
+            <div className="box  rounded p-4" style={{ background: 'linear-gradient(to right, #041562 10%, #11468F)'}}>
               <h2 className="mb-4 font-bold">Contact Form</h2>
               <form>
                 <div className="mb-3">

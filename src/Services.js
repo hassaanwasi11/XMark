@@ -94,10 +94,10 @@ function Services() {
         <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <h1 class="text-white text-4xl sm:text-6xl font-bold">
             <span>Taking </span>
-            <span className="text-[#4cbfc7]">Your Business </span>
+            <span className="text-[#19A7CE]">Your Business </span>
             <br />
             <span>To Another </span>
-            <span className="text-[#4cbfc7]"> Level </span>
+            <span className="text-[#E57C23]"> Level </span>
           </h1>
         </div>
       </div>
@@ -141,10 +141,10 @@ function Services() {
                     className="img-fluid min-h-[190px]"
                   />
                 </div>
-                <p className="mt-3 text-[#979797] text-left">
+                {/* <p className="mt-3 text-[#979797] text-left">
                   Starting From Just:{" "}
                   <span className="text-[#006261]">${card.price}</span>
-                </p>
+                </p> */}
                 <Button
                   variant="outline-primary"
                   className="custom-button align-self-start mt-4"

@@ -38,7 +38,7 @@ const NavBar = () => {
     background: 'none', // Remove background color
     border: 'none',     // Remove border
     padding: 0,  
-    marginLeft:'100px'       // Remove padding
+    marginLeft:'20px'       // Remove padding
   }} >
             <img src={SidebarIcon} alt="Sidebar Icon" width="30" height="30" />
             </Navbar.Toggle>
