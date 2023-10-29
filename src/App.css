@@ -52,7 +52,7 @@ ul {
 /* On hover, change the background color to your primary color */
 .btn-outline-primary:hover {
   background-color: transparent !important;
-  color: #19A7CE !important; /* Set the text color to white or another contrasting color */
+  color: #E57C23 !important; /* Set the text color to white or another contrasting color */
 }
 .carousel-item {
   height: 500px; /* Customize the height as per your needs */
