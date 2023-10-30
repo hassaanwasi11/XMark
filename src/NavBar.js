@@ -27,7 +27,7 @@ const NavBar = () => {
               
             <div className="flex text-center">
             {/* <img src={logo} style={{ width: '100px' }} /> */}
-              <h1 className='text-4xl  ml-2' style={{fontFamily:'cursive',color:'white'}}>Team X-Mark</h1>
+              <h1 className='text-4xl  ml-2' style={{fontFamily:'-moz-initial',color:'white'}}>Team X-Mark</h1>
             </div>
 
                 {/* <div className="mr-2 mb-2" style={circleStyle}></div>

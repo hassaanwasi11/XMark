@@ -38,7 +38,8 @@ import { useSpring, animated } from "react-spring";
 import home2 from "./images/home2.png";
 import home3 from "./images/home3.png";
 import home4 from "./images/home4.png";
-
+import { Slide } from 'react-reveal';
+import LightSpeed from 'react-reveal/LightSpeed';
 const AnimatedNumber = ({ finalNumber }) => {
   const [currentNumber, setCurrentNumber] = useState(0);
 
@@ -62,6 +63,9 @@ const Home = () => {
   const [isHovered2, setIsHovered2] = useState(false);
   const [isHovered3, setIsHovered3] = useState(false);
   const [isHovered4, setIsHovered4] = useState(false);
+  const [isHovered5, setIsHovered5] = useState(false);
+  const [isHovered6, setIsHovered6] = useState(false);
+  const [isHovered7, setIsHovered7] = useState(false);
 
   const headingAnimation = useSpring({
     opacity: 1,
@@ -122,7 +126,9 @@ const Home = () => {
             className="custom-button mr-auto sm:mr-36 justify-center!important items-center!important"
           >
             <FontAwesomeIcon icon={faHandshake} className="mr-2" />
-            <span className="text-2xl">Schedule Meeting</span>
+            <span className="text-xl sm:text-2xl">
+              Get Your Free audit report Now!
+            </span>
           </Button>{" "}
         </div>
         <div className="w-full md:w-1/2 px-4 float-md-end">
@@ -218,11 +224,10 @@ const Home = () => {
           {/* Big box on the left */}
           <div className="col-lg-6 mt-2 sm:mt-5">
             <div className="px-4 mt-10">
-              <p className="text-2xl sm:text-5xl mb-4">
+              <p className="text-2xl sm:text-5xl mb-4 text-start">
                 <span className="font-semibold text-[#E57C23]">
                   Our Services,{" "}
-                </span>{" "}
-                <br />
+                </span>                
                 <span className="font-semibold text-[#ffffff]">
                   Serving thousands of{" "}
                 </span>{" "}
@@ -230,12 +235,19 @@ const Home = () => {
                 <span className="font-semibold text-[#E57C23]">Happy </span>
                 <span className="font-semibold text-[#ffff]">Customers. </span>
               </p>
-              <p className="text-base sm:text-lg mb-4 text-[#BEBEBE]">
-                Lorem ipsum dolor sit amet consectetur. Adipiscing in non
-                ullamcorper at quam amet tortor in quam. Sollicitudin elementum
-                dui enim erat pulvinar consectetur volutpat. Diam lectus metus
-                in integer tempor. Facilisis cras aliquet nisi sed vulputate
-                proin consectetur dolor iaculis.{" "}
+              <p className="text-base sm:text-lg mb-4 text-[#BEBEBE] text-start">
+                Welcome to our comprehensive range of Amazon services, where
+                customer satisfaction is at the core of everything we do. With
+                an unwavering commitment to excellence, we take immense pride in
+                serving thousands of delighted clients worldwide. From seamless
+                product listing optimizations to strategic advertising
+                campaigns, our dedicated team works tirelessly to elevate your
+                Amazon selling experience. Backed by cutting-edge solutions and
+                industry expertise, we are here to amplify your online presence,
+                drive sales, and foster lasting success. Explore our array of
+                services tailored to meet your specific needs and join the
+                league of our satisfied clientele who have witnessed remarkable
+                growth and prosperity through our unparalleled support.{" "}
               </p>
               <Button
                 variant="outline-primary"
@@ -251,7 +263,8 @@ const Home = () => {
             <div className="row sm:mt-5 mr-0" style={{ marginRight: "0px" }}>
               {/* First pair of small boxes */}
               <div className="col-md-6">
-                <Card
+               <Slide right>
+                 <Card
                   style={{ width: "18rem" }}
                   className="mt-3 ml-6 sm:ml-0 sm:mt-5"
                 >
@@ -271,7 +284,9 @@ const Home = () => {
                     </div>
                     {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle> */}
                     <Card.Text className="text-[#979797] font-sans font-bold mt-2">
-                    Our Amazon SEO strategy is highly effective and is expected to deliver significant improvements in search rankings within a 90-day timeframe.
+                      Our Amazon SEO strategy is highly effective and is
+                      expected to deliver significant improvements in search
+                      rankings within a 90-day timeframe.
                     </Card.Text>
 
                     <Card.Link
@@ -285,9 +300,10 @@ const Home = () => {
                       />
                     </Card.Link>
                   </Card.Body>
-                </Card>
+                </Card> </Slide>
               </div>
               <div className="col-md-6">
+                <Slide left>
                 <Card style={{ width: "18rem" }} className="ml-16 sm:ml-0 mt-3">
                   <Card.Body>
                     <div className="flex">
@@ -300,12 +316,13 @@ const Home = () => {
                           marginTop: "10px",
                         }}
                       >
-                        PPC 
+                        PPC
                       </Card.Title>
                     </div>
                     {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle> */}
                     <Card.Text className="text-[#979797] font-sans font-bold mt-2">
-                    Achieving increased revenue, reduced Advertising Cost of Sales (ACOS), and transparent advertising management.
+                      Achieving increased revenue, reduced Advertising Cost of
+                      Sales (ACOS), and transparent advertising management.
                     </Card.Text>
 
                     <Card.Link
@@ -319,10 +336,11 @@ const Home = () => {
                       />
                     </Card.Link>
                   </Card.Body>
-                </Card>
+                </Card></Slide>
               </div>
               {/* Second pair of small boxes */}
               <div className="col-md-6">
+                <Slide left>
                 <Card
                   style={{ width: "18rem" }}
                   className="ml-6 sm:ml-0 mt-3 sm:mt-5"
@@ -337,14 +355,14 @@ const Home = () => {
                           margin: "5px",
                           marginTop: "10px",
                         }}
-                        
                       >
-                       	Account Management
+                        Account Management
                       </Card.Title>
                     </div>
                     {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle> */}
                     <Card.Text className="text-[#979797] font-sans font-bold mt-2">
-                    We will handle the responsibility of managing your platform, relieving you of the associated stress.
+                      We will handle the responsibility of managing your
+                      platform, relieving you of the associated stress.
                     </Card.Text>
 
                     <Card.Link
@@ -358,9 +376,11 @@ const Home = () => {
                       />
                     </Card.Link>
                   </Card.Body>
-                </Card>
+                </Card> 
+                </Slide>
               </div>
               <div className="col-md-6">
+                <Slide right>
                 <Card
                   style={{ width: "18rem" }}
                   className="ml-16 sm:ml-0  mt-3"
@@ -376,12 +396,13 @@ const Home = () => {
                           marginTop: "10px",
                         }}
                       >
-                       Brand Establishment
+                        Brand Establishment
                       </Card.Title>
                     </div>
                     {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle> */}
                     <Card.Text className="text-[#979797] font-sans font-bold mt-2">
-                    Let’s join hands to build a brand from scratch and to take it to the next level.
+                      Let’s join hands to build a brand from scratch and to take
+                      it to the next level.
                     </Card.Text>
 
                     <Card.Link
@@ -396,6 +417,7 @@ const Home = () => {
                     </Card.Link>
                   </Card.Body>
                 </Card>
+                </Slide>
               </div>
             </div>
           </div>
@@ -558,10 +580,14 @@ const Home = () => {
           <span className="text-[#E57C23]">Our Blogs</span>
         </h1>
         <div className="sm:flex justify-center space-x-8">
+        <Slide left>
           <Card
-            className="m-3 sm:m-0 w-[21rem] sm:w-[25rem] p-3"
-            style={{ border: "none", borderRadius: "10px" }}
+            className={`m-3 sm:m-0 w-[21rem] sm:w-[25rem] p-3 ${isHovered5 ? "scale-105" : ""}`}  
+            onMouseEnter={() => setIsHovered5(true)}
+            onMouseLeave={() => setIsHovered5(false)} 
+            style={{ border: "none", borderRadius: "10px", transition: "transform 0.3s ease"  }}
           >
+            {/*  */}
             <Card.Img className="mt-2" variant="top" src={blog1} />
             <Card.Body>
               {/* <Card.Text>
@@ -569,11 +595,10 @@ const Home = () => {
                         <span className="text-2xl">See More</span>
         </Card.Text> */}
               <Card.Title className="text-start">
-                Bigg News Of June 2023 Cras porttitor scelerisque cras arcu
+              Maximizing Your FBA Recovery:A Comprehensive Overview of Amazon Audits
               </Card.Title>
               <Card.Text className="text-start">
-                Return on investment (ROI) calculator that returns total ROI
-                rate and annualized ROI using either actual dates of investment
+              Amazon's Fulfillment by Amazon (FBA) program is a fantastic way for sellers to streamline their operations and reach a vast customer base. However, like any business endeavor, it's not without its challenges. One crucial aspect of managing your FBA business is understanding and optimizing your FBA recovery process. In this blog, we'll provide you with a comprehensive overview of FBA audits and how you can make the most of this opportunity to recover funds for your Amazon business.
               </Card.Text>
             </Card.Body>
             <Card.Body>
@@ -582,10 +607,13 @@ const Home = () => {
                 <FontAwesomeIcon icon={faArrowRight} className="ml-2 mt-1" />
               </Card.Link>
             </Card.Body>
-          </Card>
+          </Card></Slide>
+          <Slide bottom>
           <Card
-            className="p-3 m-3 sm:m-0 w-[21rem] sm:w-[25rem]"
-            style={{ border: "none", borderRadius: "10px" }}
+            className={`p-3 m-3 sm:m-0 w-[21rem] sm:w-[25rem] ${isHovered6 ? "scale-105" : ""}`}  
+            onMouseEnter={() => setIsHovered6(true)}
+            onMouseLeave={() => setIsHovered6(false)} 
+            style={{ border: "none", borderRadius: "10px", transition: "transform 0.3s ease"  }}
           >
             <Card.Img className="mt-2" variant="top" src={blog2} />
             <Card.Body>
@@ -594,11 +622,9 @@ const Home = () => {
                         <span className="text-2xl">See More</span>
         </Card.Text> */}
               <Card.Title className="text-start">
-                Bigg News Of June 2023 Cras porttitor scelerisque cras arcu
-              </Card.Title>
+              The Comprehensive Guide to Understanding and Managing the Product Life Cycle              </Card.Title>
               <Card.Text className="text-start">
-                Return on investment (ROI) calculator that returns total ROI
-                rate and annualized ROI using either actual dates of investment
+              The product life cycle is a fundamental concept in marketing and business strategy. It provides a structured framework for understanding how a product evolves from its introduction to the market to its eventual decline. This life cycle typically consists of four distinct stages: Introduction, Growth, Maturity, and Decline. In this comprehensive guide, we will explore each stage in detail, dissecting their key characteristics, and unveiling the significance of effectively managing the product life cycle.
               </Card.Text>
             </Card.Body>
             <Card.Body>
@@ -607,10 +633,14 @@ const Home = () => {
                 <FontAwesomeIcon icon={faArrowRight} className="ml-2 mt-1" />
               </Card.Link>
             </Card.Body>
-          </Card>
+          </Card> 
+          </Slide>
+          <Slide right>
           <Card
-            className="p-3 m-3 sm:m-0 w-[21rem] sm:w-[25rem]"
-            style={{ border: "none", borderRadius: "10px" }}
+            className={`p-3 m-3 sm:m-0 w-[21rem] sm:w-[25rem] ${isHovered7 ? "scale-105" : ""}`}  
+            onMouseEnter={() => setIsHovered7(true)}
+            onMouseLeave={() => setIsHovered7(false)} 
+            style={{ border: "none", borderRadius: "10px", transition: "transform 0.3s ease"  }}
           >
             <Card.Img className="mt-2" variant="top" src={blog3} />
             <Card.Body>
@@ -619,11 +649,9 @@ const Home = () => {
                         <span className="text-2xl">See More</span>
         </Card.Text> */}
               <Card.Title className="text-start">
-                Bigg News Of June 2023 Cras porttitor scelerisque cras arcu
-              </Card.Title>
+              Understanding Your Target Audience: Key to Successful Product Launch              </Card.Title>
               <Card.Text className="text-start">
-                Return on investment (ROI) calculator that returns total ROI
-                rate and annualized ROI using either actual dates of investment
+              When it comes to launching a new product or service, understanding your target audience is absolutely crucial. Your target audience represents the group of people who are most likely to buy what you have to offer. Defining your target audience helps you tailor your marketing efforts, product specifications, and distribution strategies effectively. In this blog, we will delve into the importance of determining your target audience and provide you with practical steps to identify them.
               </Card.Text>
             </Card.Body>
             <Card.Body>
@@ -632,7 +660,7 @@ const Home = () => {
                 <FontAwesomeIcon icon={faArrowRight} className="ml-2 mt-1" />
               </Card.Link>
             </Card.Body>
-          </Card>
+          </Card></Slide>
         </div>
         <Button
           variant="outline-primary"
@@ -642,7 +670,7 @@ const Home = () => {
           <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
         </Button>
       </div>
-      <ContactForm />
+     <LightSpeed left> <ContactForm /></LightSpeed>
       <Footer />
       <WhatsApp />
     </>

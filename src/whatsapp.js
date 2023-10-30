@@ -5,7 +5,7 @@ function WhatsApp() {
     const [isHovered, setIsHovered] = useState(false);
     const openWhatsApp = () => {
         // Replace '1234567890' with your phone number
-        window.open("https://wa.me/1234567890", "_blank");
+        window.open("https://wa.me/+923015812498", "_blank");
       };
     return(
         <div
@@ -16,7 +16,7 @@ function WhatsApp() {
         style={{ transition: 'transform 0.3s ease' }}
     >
         <img src={whatsapp} alt="WhatsApp Icon" className="h-6 w-6 mr-2" />
-        <span>WhatsApp us</span>
+        <span>WhatsApp us Now</span>
     </div>
     );
 }

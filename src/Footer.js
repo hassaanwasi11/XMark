@@ -41,34 +41,40 @@ function Footer() {
           <div className="col-md-3 col-sm-6">
             {/* First Column */}
             <div className="flex text-center">
-            <img src={logo} width={'10%'} />
-              <h1 className='text-3xl font-sans'>LOGO</h1>
+            {/* <img src={logo} width={'10%'} /> */}
+            <h1 className='text-4xl  ml-2' style={{fontFamily:'-moz-initial',color:'white'}}>Team X-Mark</h1>
             </div>
-            <p className='text-sm sm:text-lg text-left'>Company info dolor sit amet consectetur. Adipiscing in non ulla mco rper at quam amet tortor in quam. Sollicitudin elementum dui enim erat pulvinar consecteculis.</p>
+            <p className='text-sm sm:text-lg text-left'>To empower ecommerce sellers to effectively oversee, enhance, and expand their global business operations.</p>
            
           </div>
           <div className="col-md-3 col-sm-6">
             {/* Second Column */}
-            <h5 className="text-left">Header 1</h5>
-            <p className="text-left">Subheader 1.1</p>
-            <p className="text-left">Subheader 1.2</p>
-            <p className="text-left">Subheader 1.3</p>
+            <h5 className="text-left">Services:</h5>
+            <p className="text-left">SEO Service</p>
+            <p className="text-left">Amazon PPC</p>
+            <p className="text-left">Account management</p>
+            <p className="text-left">Brand Scaling</p>
+            <p className="text-left">Influencer’s marketing</p>
+            <p className="text-left">Listing Promotion</p>
           </div>
           <div className="col-md-3 col-sm-6">
             {/* Third Column */}
-            <h5 className="text-left">Header 2</h5>
-            <p className="text-left">Subheader 2.1</p>
-            <p className="text-left">Subheader 2.2</p>
-            <p className="text-left">Subheader 2.3</p>
+            <h5 className="text-left">Free Tools:</h5>
+            <p className="text-left">FBA Calculator</p>
+            <p className="text-left">ROI Calculator</p>
+            <p className="text-left">Amazon PPC Audit</p>
+            <p className="text-left">Amazon Listing Audit</p>
           </div>
         
           <div className="col-md-3 col-sm-6">
             {/* Fourth Column */}
-            <h5 className="text-left">Header 3</h5>
-            <p className="text-left">Subheader 3.1</p>
-            <p className="text-left">Subheader 3.2</p>
-            <p className="text-left">Subheader 3.3</p>
-          
+            <h5 className="text-left">Resources:</h5>
+            <p className="text-left">About us</p>
+            <p className="text-left">Careers</p>
+            <p className="text-left">Blogs</p>
+            <p className="text-left">Cheat Sheets</p>
+            <p className="text-left">Newsletters</p>
+            <p className="text-left">Guides</p>
           </div> 
         
             
@@ -95,7 +101,7 @@ function Footer() {
             </div>
             <div className="row">
           <div className="col-md-12 text-right">
-            <p className="text-white">&copy; 2023 Your Company</p>
+            <p className="text-white">&copy; 2023 Team XMark</p>
           </div> </div>   
       </div>
       </div>
