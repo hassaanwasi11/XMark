@@ -12,6 +12,8 @@ import {
   faHandshake,
   faPhone,
   faChartLine,
+  faListDots,
+  faDotCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import img3 from "./images/Info Frame.png";
 import Slide1 from "./images/slide 1.png";
@@ -38,7 +40,7 @@ import { useSpring, animated } from "react-spring";
 import home2 from "./images/home2.png";
 import home3 from "./images/home3.png";
 import home4 from "./images/home4.png";
-import { Slide } from 'react-reveal';
+import { Slide ,Fade} from 'react-reveal';
 import LightSpeed from 'react-reveal/LightSpeed';
 const AnimatedNumber = ({ finalNumber }) => {
   const [currentNumber, setCurrentNumber] = useState(0);
@@ -432,22 +434,32 @@ const Home = () => {
             onMouseLeave={() => setIsHovered1(false)}
             style={{ transition: "transform 0.3s ease" }}
           >
-            <div className="bg-[#11468F] rounded-2xl  h-[600px]">
-              <div className="box p-4 d-flex flex-column align-items-start">
-                <h2 className="font-sans font-bold text-white">
-                  <span className="text-[#E57C23]">ROI</span> Calculator
-                </h2>
-                <p className="text-[#979797] font-sans text-lg text-start">
-                  Return on investment (ROI) calculator that returns total ROI
-                  rate and annualized ROI using either actual dates of
-                  investment.
+            <div className="bg-[#11468F] rounded-2xl  ">
+             <div className="box p-4 d-flex flex-column ">
+             <Slide left>
+                <h2 className="font-sans font-bold text-white text-center sm:text-5xl">
+                  <span className="text-[#E57C23]">Basic</span> Package
+                </h2> </Slide>
+                
+                <p className="text-[#979797] font-sans text-lg sm:text-2xl text-start">
+              
+                  <ul className='space-y-4'> 
+                  <Fade delay={350}>    <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Inventory Management</li> </Fade>
+                  <Fade delay={450}>  <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Product Sourcing Management</li></Fade>
+                  <Fade delay={550}>       <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" />Budget and Inventory Planning</li></Fade>
+                  <Fade delay={650}>    <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Product Listing Optimization (Keep it upto date according to the market)</li></Fade>
+                  <Fade delay={750}>    <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Photography and Videography from China (Suggestion Files only)</li></Fade>
+                  <Fade delay={850}>      <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Improving and Maintaining the Ranking</li></Fade>
+                  <Fade delay={950}>      <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Weekly/Monthly Sales Report</li></Fade>
+                  <Fade delay={1050}>          <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Weekly tracking of Keywords</li></Fade>
+                  <Fade delay={1150}>      <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> PPC and it's Optimization</li></Fade>
+                  <Fade delay={1250}>      <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Case Log Management</li></Fade>
+                  </ul>
                 </p>
               </div>
 
-              <div className="flex justify-content-center align-items-center">
-                <img src={calculator} alt="Box 1" className="img-fluid" />
-              </div>
-              <div className="box p-4 d-flex flex-column align-items-start">
+
+              {/* <div className="box p-4 d-flex flex-column align-items-start">
                 <Button
                   variant="outline-primary"
                   className="custom-button align-self-start"
@@ -455,7 +467,7 @@ const Home = () => {
                   <FontAwesomeIcon icon={faCalculator} className="mr-2" />
                   <span className="text-2xl">Calculate Now</span>
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div
@@ -464,38 +476,45 @@ const Home = () => {
             onMouseLeave={() => setIsHovered2(false)}
             style={{ transition: "transform 0.3s ease" }}
           >
-            <div className="bg-[#11468F] rounded-2xl h-[600px]">
-              <div className="box p-4 d-flex flex-column align-items-start">
-                <h2 className="font-sans font-bold text-white">
-                  <span className="text-[#E57C23]">Dashboard </span> And Graphs
+            <div className="bg-[#11468F] rounded-2xl ">
+              <div className="box p-4 d-flex flex-column ">
+              <Slide left>
+                <h2 className="font-sans font-bold text-white sm:text-5xl">
+                  <span className="text-[#E57C23]">Premium </span> Package
                 </h2>
-                <p className="text-[#979797] font-sans text-lg text-start">
-                  Lorem ipsum dolor sit amet consecte tur .uam amet Adipiscing
-                  in non ullamcorper at quam amet tortor
-                </p>
-              </div>
+                 </Slide>
+                <p className="text-[#979797] font-sans text-lg sm:text-2xl text-start">
+              
+                  <ul className='space-y-4'> 
+                  <Fade delay={350}>    <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Inventory Management</li> </Fade>
+                  <Fade delay={450}>  <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Product Sourcing Management</li></Fade>
+                  <Fade delay={550}>       <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" />Budget and Inventory Planning</li></Fade>
+                  <Fade delay={650}>       <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" />Competitor's Niche Analysis</li></Fade>
+                  <Fade delay={750}>       <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" />Advanced Keywords Research</li></Fade>
+                  <Fade delay={850}>    <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Product Listing Optimization (Keep it upto date according to the market)</li></Fade>
+                  <Fade delay={950}>    <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Photography and Videography from China (Suggestion Files only)</li></Fade>
+                  <Fade delay={1050}>      <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Improving and Maintaining the Ranking</li></Fade>
+                  <Fade delay={1150}>      <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Daily/Weekly/Monthly Sales Report</li></Fade>
+                  <Fade delay={1250}>       <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" />Sales Forecasting Reports</li></Fade>
+                  <Fade delay={350}>       <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" />Forecasting Anaylsis (Budget,Demand,Keywords, Competitors)</li></Fade>
+                  <Fade delay={1450}>       <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" />Sales Boosting via different strategies</li></Fade>
+                  <Fade delay={1550}>       <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" />Daily Tracking of Keywords</li></Fade>
+                  <Fade delay={1650}>          <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Weekly tracking of Keywords</li></Fade>
+                  <Fade delay={1750}>      <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> PPC and it's Optimization</li></Fade>
+                  <Fade delay={1850}>      <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" /> Case Log Management</li></Fade>
+                  <Fade delay={1950}>       <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" />Bi-Weekly Meetings</li></Fade>
+                  <Fade delay={2050}>       <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" />Professional Consultaion</li></Fade>
+                  <Fade delay={2150}>       <li><FontAwesomeIcon icon={faDotCircle} className="mr-2" color="#E57C23" />Monthly Business Reports</li></Fade>
 
-              <div className="flex justify-content-center align-items-center">
-                <img
-                  src={dashboard}
-                  style={{ height: "313px" }}
-                  alt="Box 1"
-                  className="img-fluid"
-                />
-              </div>
-              <div className="box p-4 d-flex flex-column align-items-start">
-                <Button
-                  variant="outline-primary"
-                  className="custom-button align-self-start"
-                >
-                  <span className="text-2xl">See more</span>
-                  <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
-                </Button>
-              </div>
+
+
+                  </ul>
+                </p>
+              </div>            
             </div>
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div
             className={`col-md-6 mb-4  ${isHovered3 ? "scale-105" : ""}`}
             onMouseEnter={() => setIsHovered3(true)}
@@ -567,7 +586,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div
         className=" mt-2 pb-2"
