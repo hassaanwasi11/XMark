@@ -1,0 +1,11 @@
+# Enable rewrite engine
+RewriteEngine On
+
+# Set the base path for the app (replace '/your-react-app' with your actual base path)
+RewriteBase /your-react-app/
+
+# Redirect all requests to the index.html
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ./index.html [L]
