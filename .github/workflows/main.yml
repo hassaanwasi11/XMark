@@ -24,14 +24,12 @@ jobs:
       - name: Build React app
         run: npm run build
 
-  deploy:
+  web-deploy:
     runs-on: ubuntu-20.04
-
-    needs: build
 
     steps:
       - name: List output files
-        run: find build -print
+        run: find build/ -print
       - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
