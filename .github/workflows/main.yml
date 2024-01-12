@@ -33,7 +33,7 @@ jobs:
       - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@2.0.0
         with:
-          ftp_server: 217.196.55.59
+          FTP_SERVER: teamxmark.com
           ftp_username: u750630823
           ftp_password: Koko@ak4
           port: 21
