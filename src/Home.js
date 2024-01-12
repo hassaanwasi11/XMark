@@ -16,9 +16,9 @@ import {
   faDotCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import img3 from "./images/Info Frame.png";
-import Slide1 from "./images/slide 1.png";
-import Slide2 from "./images/slide2.png";
-import Slide3 from "./images/slide3.png";
+import Slide1 from "./images/slide111.JPG";
+import Slide2 from "./images/slide22.JPG";
+import Slide3 from "./images/slide33.JPG";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import icon1 from "./images/icon11.svg";
@@ -179,11 +179,11 @@ const Home = () => {
           <img className="d-block w-100" src={Slide1} alt="First slide" />
           <Carousel.Caption className="text-center align-middle items-center">
             <h3 className="font-bold text-2xl sm:text-8xl">
-              First slide label
+              Annual Dinner 2023 
             </h3>
-            <p className="sm:text-xl text-base">
+            {/* <p className="sm:text-xl text-base">
               Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </p>
+            </p> */}
             <div>
               <Button
                 variant="outline-primary"
@@ -197,10 +197,10 @@ const Home = () => {
         <Carousel.Item>
           <img className="d-block w-100" src={Slide2} alt="Second slide" />
           <Carousel.Caption>
-            <h3 className="font-bold text-8xl">Second slide label</h3>
-            <p className="text-xl">
+            <h3 className="font-bold text-8xl"> Annual Dinner 2023 </h3>
+            {/* <p className="text-xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
+            </p> */}
             <Button variant="outline-primary" className="custom-button1 m-auto">
               <span className="text-4xl">Get Started</span>
             </Button>{" "}
@@ -209,10 +209,11 @@ const Home = () => {
         <Carousel.Item>
           <img className="d-block w-100" src={Slide3} alt="Second slide" />
           <Carousel.Caption>
-            <h3 className="font-bold text-8xl">Second slide label</h3>
-            <p className="text-xl">
+          <h3 className="font-bold text-8xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white">Annual Dinner 2023</h3>
+
+            {/* <p className="text-xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
+            </p> */}
             <Button variant="outline-primary" className="custom-button1 m-auto">
               <span className="text-4xl">Get Started</span>
             </Button>{" "}
