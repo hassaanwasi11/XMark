@@ -30,6 +30,8 @@ jobs:
     needs: build
 
     steps:
+      - name: List output files
+        run: find build/ -print
       - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -37,5 +39,5 @@ jobs:
           username: u750630823
           password: Koko@ak4
           port: 21
-          local-dir: ./build/
-          server-dir: /public_html/
+          local-dir: build/
+          server-dir: public_html/
