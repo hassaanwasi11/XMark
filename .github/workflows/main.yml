@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - name: Checkout code
@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     needs: build
 
