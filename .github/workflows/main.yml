@@ -31,7 +31,7 @@ jobs:
 
     steps:
       - name: Deploy to Hostinger
-        uses: wuptime/ftp-action@v2
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0
         with:
           host: ftp://teamxmark.com
           user: u750630823
