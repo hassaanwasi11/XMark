@@ -33,9 +33,9 @@ jobs:
       - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@2.0.0
         with:
-          host: ftp://teamxmark.com
-          user: u750630823
-          password: Koko@ak4
+          ftp_server: ftp://teamxmark.com
+          ftp_username: u750630823
+          ftp_password: Koko@ak4
           port: 21
-          local-dir: build
-          remote-dir: /public_html
+          local_dir: build
+          remote_dir: /public_html
